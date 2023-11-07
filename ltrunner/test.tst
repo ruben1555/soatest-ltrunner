@@ -88,337 +88,8 @@
   <maxProfileMappingID>9</maxProfileMappingID>
   <PropertyOwnerImpl className="com.parasoft.property.PropertyOwnerImpl" version="1.1">
   </PropertyOwnerImpl>
-  <nextIdentifier>57</nextIdentifier>
+  <nextIdentifier>75</nextIdentifier>
   <testsSize>2</testsSize>
-  <ToolTest className="webtool.test.ToolTest" version="4.15.2">
-   <DebugAssets className="webtool.test.debug.DebugAssets" version="1">
-   </DebugAssets>
-   <ReportingSettings className="webtool.test.ReportingSettings" version="1.1">
-    <TestGRSSettings className="webtool.test.grs.TestGRSSettings" version="1.4.3">
-    </TestGRSSettings>
-   </ReportingSettings>
-   <testLogic>true</testLogic>
-   <TestLogic className="webtool.test.logic.TestLogic" version="1.7">
-    <TestExecutionDelay className="webtool.test.logic.TestExecutionDelay" version="1.2">
-    </TestExecutionDelay>
-    <TestExecutionDelay className="webtool.test.logic.TestExecutionDelay" version="1.2">
-    </TestExecutionDelay>
-    <TestDependencyLogic className="webtool.test.logic.TestDependencyLogic" version="1.2">
-    </TestDependencyLogic>
-   </TestLogic>
-   <testID>48</testID>
-   <enabled>true</enabled>
-   <name>LoadTest Runner</name>
-   <CustomTool className="webtool.extension.tool.CustomTool" version="v.2.2.14">
-    <iconName>DefaultTool</iconName>
-    <name>LoadTest Runner</name>
-    <CustomToolOutputProvider className="webtool.extension.tool.CustomToolOutputProvider" version="1.1">
-     <customToolOutputProviderSize>2</customToolOutputProviderSize>
-     <outputProviderKey>report_html</outputProviderKey>
-     <NamedToolOutputProvider className="com.parasoft.tool.NamedToolOutputProvider" version="1.2.1">
-      <outputToolsSize>1</outputToolsSize>
-      <BrowserTool className="webtool.tool.BrowserTool" version="v.2.3.14">
-       <allowToolbar>false</allowToolbar>
-       <iconName>Browse</iconName>
-       <name>Browse</name>
-       <WebBrowser className="com.parasoft.help.WebBrowser" version="4.4">
-        <Argv className="com.parasoft.util.Argv" version="4">
-         <args size="2">
-          <arg index="0">C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe</arg>
-          <arg index="1">%1</arg>
-         </args>
-        </Argv>
-        <Argv className="com.parasoft.util.Argv" version="4">
-         <args size="2">
-          <arg index="0">C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</arg>
-          <arg index="1">%1</arg>
-         </args>
-        </Argv>
-        <Argv className="com.parasoft.util.Argv" version="4">
-         <args size="2">
-         </args>
-        </Argv>
-        <Argv className="com.parasoft.util.Argv" version="4">
-         <args size="2">
-         </args>
-        </Argv>
-       </WebBrowser>
-      </BrowserTool>
-      <name>Parasoft LoadTest Report HTML</name>
-     </NamedToolOutputProvider>
-     <outputProviderKey>report_xml</outputProviderKey>
-     <NamedToolOutputProvider className="com.parasoft.tool.NamedToolOutputProvider" version="1.2.1">
-      <outputToolsSize>1</outputToolsSize>
-      <XMLAssertionTool className="webtool.xml.assertion.XMLAssertionTool" version="v.2.2.1.14">
-       <iconName>XMLAssertor</iconName>
-       <name>XML Assertor</name>
-       <ExpectedXMLMessage className="webtool.xml.ExpectedXMLMessage" version="1.2.1">
-        <message>true</message>
-       </ExpectedXMLMessage>
-      </XMLAssertionTool>
-      <name>Parasoft LoadTest Report XML</name>
-     </NamedToolOutputProvider>
-    </CustomToolOutputProvider>
-    <CustomToolConfiguration className="com.parasoft.extension.tool.CustomToolConfiguration" version="2.1.6">
-     <ConfigClassName>com.parasoft.soavirt.loadtestrunner.Tool</ConfigClassName>
-     <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
-      <customValueMaps size="9">
-       <key index="0">context_scenario</key>
-       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="0" version="1.2">
-        <MultiValue className="webtool.data.MultiValue" version="1.5">
-         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
-          <value>/Test Suite: Bookstore/Scenario: Search and order a book</value>
-         </StringTestValue>
-         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
-         </ParameterizedTestValue>
-         <valuesSize>1</valuesSize>
-         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
-          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
-           <code>true</code>
-           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
-            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
-             <useText>true</useText>
-             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
-             </ScriptingTextInput>
-            </ScriptingInput>
-            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
-            </ScriptEngineIdentifier>
-           </ScriptCode>
-           <methodId>true</methodId>
-           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
-           </ScriptMethodIdentifier>
-          </UserMethod>
-         </ScriptedValue>
-        </MultiValue>
-       </MultiValueCustomValue>
-       <key index="1">context_tst</key>
-       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="1" version="1.2">
-        <MultiValue className="webtool.data.MultiValue" version="1.5">
-         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
-          <value>test.tst</value>
-         </StringTestValue>
-         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
-         </ParameterizedTestValue>
-         <valuesSize>1</valuesSize>
-         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
-          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
-           <code>true</code>
-           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
-            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
-             <useText>true</useText>
-             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
-             </ScriptingTextInput>
-            </ScriptingInput>
-            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
-            </ScriptEngineIdentifier>
-           </ScriptCode>
-           <methodId>true</methodId>
-           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
-           </ScriptMethodIdentifier>
-          </UserMethod>
-         </ScriptedValue>
-        </MultiValue>
-       </MultiValueCustomValue>
-       <key index="2">qos_execution</key>
-       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="2" version="1.2">
-        <MultiValue className="webtool.data.MultiValue" version="1.5">
-         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
-          <value>2</value>
-         </StringTestValue>
-         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
-         </ParameterizedTestValue>
-         <valuesSize>1</valuesSize>
-         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
-          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
-           <code>true</code>
-           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
-            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
-             <useText>true</useText>
-             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
-             </ScriptingTextInput>
-            </ScriptingInput>
-            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
-            </ScriptEngineIdentifier>
-           </ScriptCode>
-           <methodId>true</methodId>
-           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
-           </ScriptMethodIdentifier>
-          </UserMethod>
-         </ScriptedValue>
-        </MultiValue>
-       </MultiValueCustomValue>
-       <key index="3">qos_failures</key>
-       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="3" version="1.2">
-        <MultiValue className="webtool.data.MultiValue" version="1.5">
-         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
-         </StringTestValue>
-         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
-         </ParameterizedTestValue>
-         <valuesSize>1</valuesSize>
-         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
-          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
-           <code>true</code>
-           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
-            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
-             <useText>true</useText>
-             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
-             </ScriptingTextInput>
-            </ScriptingInput>
-            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
-            </ScriptEngineIdentifier>
-           </ScriptCode>
-           <methodId>true</methodId>
-           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
-           </ScriptMethodIdentifier>
-          </UserMethod>
-         </ScriptedValue>
-        </MultiValue>
-       </MultiValueCustomValue>
-       <key index="4">qos_hits</key>
-       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="4" version="1.2">
-        <MultiValue className="webtool.data.MultiValue" version="1.5">
-         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
-          <value>250</value>
-         </StringTestValue>
-         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
-         </ParameterizedTestValue>
-         <valuesSize>1</valuesSize>
-         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
-          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
-           <code>true</code>
-           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
-            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
-             <useText>true</useText>
-             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
-             </ScriptingTextInput>
-            </ScriptingInput>
-            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
-            </ScriptEngineIdentifier>
-           </ScriptCode>
-           <methodId>true</methodId>
-           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
-           </ScriptMethodIdentifier>
-          </UserMethod>
-         </ScriptedValue>
-        </MultiValue>
-       </MultiValueCustomValue>
-       <key index="5">qos_server</key>
-       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="5" version="1.2">
-        <MultiValue className="webtool.data.MultiValue" version="1.5">
-         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
-         </StringTestValue>
-         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
-         </ParameterizedTestValue>
-         <valuesSize>1</valuesSize>
-         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
-          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
-           <code>true</code>
-           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
-            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
-             <useText>true</useText>
-             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
-             </ScriptingTextInput>
-            </ScriptingInput>
-            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
-            </ScriptEngineIdentifier>
-           </ScriptCode>
-           <methodId>true</methodId>
-           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
-           </ScriptMethodIdentifier>
-          </UserMethod>
-         </ScriptedValue>
-        </MultiValue>
-       </MultiValueCustomValue>
-       <key index="6">qos_succes</key>
-       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="6" version="1.2">
-        <MultiValue className="webtool.data.MultiValue" version="1.5">
-         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
-         </StringTestValue>
-         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
-         </ParameterizedTestValue>
-         <valuesSize>1</valuesSize>
-         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
-          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
-           <code>true</code>
-           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
-            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
-             <useText>true</useText>
-             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
-             </ScriptingTextInput>
-            </ScriptingInput>
-            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
-            </ScriptEngineIdentifier>
-           </ScriptCode>
-           <methodId>true</methodId>
-           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
-           </ScriptMethodIdentifier>
-          </UserMethod>
-         </ScriptedValue>
-        </MultiValue>
-       </MultiValueCustomValue>
-       <key index="7">scenario_minutes</key>
-       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="7" version="1.2">
-        <MultiValue className="webtool.data.MultiValue" version="1.5">
-         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
-          <value>1</value>
-         </StringTestValue>
-         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
-         </ParameterizedTestValue>
-         <valuesSize>1</valuesSize>
-         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
-          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
-           <code>true</code>
-           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
-            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
-             <useText>true</useText>
-             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
-             </ScriptingTextInput>
-            </ScriptingInput>
-            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
-            </ScriptEngineIdentifier>
-           </ScriptCode>
-           <methodId>true</methodId>
-           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
-           </ScriptMethodIdentifier>
-          </UserMethod>
-         </ScriptedValue>
-        </MultiValue>
-       </MultiValueCustomValue>
-       <key index="8">scenario_vus</key>
-       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="8" version="1.2">
-        <MultiValue className="webtool.data.MultiValue" version="1.5">
-         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
-          <value>5</value>
-         </StringTestValue>
-         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
-         </ParameterizedTestValue>
-         <valuesSize>1</valuesSize>
-         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
-          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
-           <code>true</code>
-           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
-            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
-             <useText>true</useText>
-             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
-             </ScriptingTextInput>
-            </ScriptingInput>
-            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
-            </ScriptEngineIdentifier>
-           </ScriptCode>
-           <methodId>true</methodId>
-           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
-           </ScriptMethodIdentifier>
-          </UserMethod>
-         </ScriptedValue>
-        </MultiValue>
-       </MultiValueCustomValue>
-      </customValueMaps>
-     </CustomValueMap>
-     <className>com.parasoft.soavirt.loadtestrunner.Tool</className>
-     <name>Load Test Runner</name>
-    </CustomToolConfiguration>
-   </CustomTool>
-  </ToolTest>
   <TestSuite className="webtool.test.TestSuite" version="49.15.2">
    <DebugAssets className="webtool.test.debug.DebugAssets" version="1">
    </DebugAssets>
@@ -438,7 +109,7 @@
     <TestDependencyLogic className="webtool.test.logic.TestDependencyLogic" version="1.2">
     </TestDependencyLogic>
    </TestLogic>
-   <testID>50</testID>
+   <testID>67</testID>
    <enabled>true</enabled>
    <name>Search and order a book</name>
    <TestSuitePerformanceOptions className="webtool.test.performance.TestSuitePerformanceOptions" version="1.5">
@@ -538,7 +209,7 @@
      <TestDependencyLogic className="webtool.test.logic.TestDependencyLogic" version="1.2">
      </TestDependencyLogic>
     </TestLogic>
-    <testID>51</testID>
+    <testID>68</testID>
     <enabled>true</enabled>
     <name>getItemById</name>
     <performanceGroup>2</performanceGroup>
@@ -2121,16 +1792,24 @@
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>13</hash>
                  <localName>stockQuantity</localName>
-                 <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                  <hash>14</hash>
+                 <IntegerType className="webtool.soap.IntegerType" version="2">
+                  <hash>8</hash>
                  </IntegerType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>15</hash>
+                 <hash>14</hash>
                  <minOccurs>0</minOccurs>
                  <maxOccurs>-1</maxOccurs>
                  <nillable>true</nillable>
                  <localName>authors</localName>
+                 <StringType className="webtool.soap.StringType" version="2">
+                  <hash>10</hash>
+                 </StringType>
+                </ElementType>
+                <ElementType className="webtool.soap.ElementType" version="2.12.3">
+                 <hash>15</hash>
+                 <minOccurs>0</minOccurs>
+                 <localName>description</localName>
                  <StringType className="webtool.soap.StringType" version="2.5.3">
                   <hash>16</hash>
                  </StringType>
@@ -2138,17 +1817,9 @@
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>17</hash>
                  <minOccurs>0</minOccurs>
-                 <localName>description</localName>
-                 <StringType className="webtool.soap.StringType" version="2">
-                  <hash>10</hash>
-                 </StringType>
-                </ElementType>
-                <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>18</hash>
-                 <minOccurs>0</minOccurs>
                  <localName>ISBN</localName>
-                 <StringType className="webtool.soap.StringType" version="2">
-                  <hash>16</hash>
+                 <StringType className="webtool.soap.StringType" version="2.5.3">
+                  <hash>18</hash>
                  </StringType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -2164,7 +1835,7 @@
                  <minOccurs>0</minOccurs>
                  <localName>publisher</localName>
                  <StringType className="webtool.soap.StringType" version="2">
-                  <hash>10</hash>
+                  <hash>16</hash>
                  </StringType>
                 </ElementType>
                </SequenceCompositor>
@@ -2342,7 +2013,7 @@
      <TestDependencyLogic className="webtool.test.logic.TestDependencyLogic" version="1.2">
      </TestDependencyLogic>
     </TestLogic>
-    <testID>52</testID>
+    <testID>69</testID>
     <enabled>true</enabled>
     <name>getItemByTitle</name>
     <performanceGroup>3</performanceGroup>
@@ -3907,16 +3578,24 @@
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>13</hash>
                  <localName>stockQuantity</localName>
-                 <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                  <hash>14</hash>
+                 <IntegerType className="webtool.soap.IntegerType" version="2">
+                  <hash>8</hash>
                  </IntegerType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>15</hash>
+                 <hash>14</hash>
                  <minOccurs>0</minOccurs>
                  <maxOccurs>-1</maxOccurs>
                  <nillable>true</nillable>
                  <localName>authors</localName>
+                 <StringType className="webtool.soap.StringType" version="2">
+                  <hash>10</hash>
+                 </StringType>
+                </ElementType>
+                <ElementType className="webtool.soap.ElementType" version="2.12.3">
+                 <hash>15</hash>
+                 <minOccurs>0</minOccurs>
+                 <localName>description</localName>
                  <StringType className="webtool.soap.StringType" version="2.5.3">
                   <hash>16</hash>
                  </StringType>
@@ -3924,17 +3603,9 @@
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
                  <hash>17</hash>
                  <minOccurs>0</minOccurs>
-                 <localName>description</localName>
-                 <StringType className="webtool.soap.StringType" version="2">
-                  <hash>10</hash>
-                 </StringType>
-                </ElementType>
-                <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                 <hash>18</hash>
-                 <minOccurs>0</minOccurs>
                  <localName>ISBN</localName>
-                 <StringType className="webtool.soap.StringType" version="2">
-                  <hash>16</hash>
+                 <StringType className="webtool.soap.StringType" version="2.5.3">
+                  <hash>18</hash>
                  </StringType>
                 </ElementType>
                 <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -3950,7 +3621,7 @@
                  <minOccurs>0</minOccurs>
                  <localName>publisher</localName>
                  <StringType className="webtool.soap.StringType" version="2">
-                  <hash>10</hash>
+                  <hash>16</hash>
                  </StringType>
                 </ElementType>
                </SequenceCompositor>
@@ -4123,7 +3794,7 @@
      <TestDependencyLogic className="webtool.test.logic.TestDependencyLogic" version="1.2">
      </TestDependencyLogic>
     </TestLogic>
-    <testID>53</testID>
+    <testID>70</testID>
     <enabled>true</enabled>
     <name>addItemToCart</name>
     <performanceGroup>0</performanceGroup>
@@ -5714,31 +5385,31 @@
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
                        <hash>15</hash>
                        <localName>id</localName>
-                       <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                        <hash>16</hash>
+                       <IntegerType className="webtool.soap.IntegerType" version="2">
+                        <hash>8</hash>
                        </IntegerType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>17</hash>
+                       <hash>16</hash>
                        <minOccurs>0</minOccurs>
                        <localName>name</localName>
                        <StringType className="webtool.soap.StringType" version="2.5.3">
-                        <hash>18</hash>
+                        <hash>17</hash>
                        </StringType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>19</hash>
+                       <hash>18</hash>
                        <minOccurs>0</minOccurs>
                        <localName>price</localName>
                        <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-                        <hash>20</hash>
+                        <hash>19</hash>
                        </DecimalType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>21</hash>
+                       <hash>20</hash>
                        <localName>stockQuantity</localName>
-                       <IntegerType className="webtool.soap.IntegerType" version="2">
-                        <hash>8</hash>
+                       <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
+                        <hash>21</hash>
                        </IntegerType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -5747,50 +5418,50 @@
                        <maxOccurs>-1</maxOccurs>
                        <nillable>true</nillable>
                        <localName>authors</localName>
-                       <StringType className="webtool.soap.StringType" version="2.5.3">
-                        <hash>23</hash>
+                       <StringType className="webtool.soap.StringType" version="2">
+                        <hash>17</hash>
                        </StringType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>24</hash>
+                       <hash>23</hash>
                        <minOccurs>0</minOccurs>
                        <localName>description</localName>
-                       <StringType className="webtool.soap.StringType" version="2">
-                        <hash>18</hash>
+                       <StringType className="webtool.soap.StringType" version="2.5.3">
+                        <hash>24</hash>
                        </StringType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
                        <hash>25</hash>
                        <minOccurs>0</minOccurs>
                        <localName>ISBN</localName>
-                       <StringType className="webtool.soap.StringType" version="2">
-                        <hash>23</hash>
+                       <StringType className="webtool.soap.StringType" version="2.5.3">
+                        <hash>26</hash>
                        </StringType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>26</hash>
+                       <hash>27</hash>
                        <minOccurs>0</minOccurs>
                        <localName>publicationDate</localName>
                        <DateTimeType className="webtool.soap.DateTimeType" version="2.2.3">
-                        <hash>27</hash>
+                        <hash>28</hash>
                        </DateTimeType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>28</hash>
+                       <hash>29</hash>
                        <minOccurs>0</minOccurs>
                        <localName>publisher</localName>
                        <StringType className="webtool.soap.StringType" version="2">
-                        <hash>18</hash>
+                        <hash>24</hash>
                        </StringType>
                       </ElementType>
                      </SequenceCompositor>
                     </ComplexType>
                    </ElementType>
                    <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                    <hash>29</hash>
+                    <hash>30</hash>
                     <localName>quantity</localName>
-                    <IntegerType className="webtool.soap.IntegerType" version="2">
-                     <hash>16</hash>
+                    <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
+                     <hash>31</hash>
                     </IntegerType>
                    </ElementType>
                   </SequenceCompositor>
@@ -5849,15 +5520,15 @@
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
               <hash>6</hash>
               <localName>itemId</localName>
-              <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-               <hash>7</hash>
+              <IntegerType className="webtool.soap.IntegerType" version="2">
+               <hash>5</hash>
               </IntegerType>
              </ElementType>
              <ElementType className="webtool.soap.ElementType" version="2.12.3">
-              <hash>8</hash>
+              <hash>7</hash>
               <localName>quantity</localName>
-              <IntegerType className="webtool.soap.IntegerType" version="2">
-               <hash>5</hash>
+              <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
+               <hash>8</hash>
               </IntegerType>
              </ElementType>
             </SequenceCompositor>
@@ -6003,7 +5674,7 @@
      <TestDependencyLogic className="webtool.test.logic.TestDependencyLogic" version="1.2">
      </TestDependencyLogic>
     </TestLogic>
-    <testID>54</testID>
+    <testID>71</testID>
     <enabled>true</enabled>
     <name>getItemsInCart</name>
     <performanceGroup>4</performanceGroup>
@@ -7577,31 +7248,31 @@
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
                        <hash>15</hash>
                        <localName>id</localName>
-                       <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
-                        <hash>16</hash>
+                       <IntegerType className="webtool.soap.IntegerType" version="2">
+                        <hash>8</hash>
                        </IntegerType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>17</hash>
+                       <hash>16</hash>
                        <minOccurs>0</minOccurs>
                        <localName>name</localName>
                        <StringType className="webtool.soap.StringType" version="2.5.3">
-                        <hash>18</hash>
+                        <hash>17</hash>
                        </StringType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>19</hash>
+                       <hash>18</hash>
                        <minOccurs>0</minOccurs>
                        <localName>price</localName>
                        <DecimalType className="webtool.soap.DecimalType" version="2.2.3">
-                        <hash>20</hash>
+                        <hash>19</hash>
                        </DecimalType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>21</hash>
+                       <hash>20</hash>
                        <localName>stockQuantity</localName>
-                       <IntegerType className="webtool.soap.IntegerType" version="2">
-                        <hash>8</hash>
+                       <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
+                        <hash>21</hash>
                        </IntegerType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
@@ -7610,50 +7281,50 @@
                        <maxOccurs>-1</maxOccurs>
                        <nillable>true</nillable>
                        <localName>authors</localName>
-                       <StringType className="webtool.soap.StringType" version="2.5.3">
-                        <hash>23</hash>
+                       <StringType className="webtool.soap.StringType" version="2">
+                        <hash>17</hash>
                        </StringType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>24</hash>
+                       <hash>23</hash>
                        <minOccurs>0</minOccurs>
                        <localName>description</localName>
-                       <StringType className="webtool.soap.StringType" version="2">
-                        <hash>18</hash>
+                       <StringType className="webtool.soap.StringType" version="2.5.3">
+                        <hash>24</hash>
                        </StringType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
                        <hash>25</hash>
                        <minOccurs>0</minOccurs>
                        <localName>ISBN</localName>
-                       <StringType className="webtool.soap.StringType" version="2">
-                        <hash>23</hash>
+                       <StringType className="webtool.soap.StringType" version="2.5.3">
+                        <hash>26</hash>
                        </StringType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>26</hash>
+                       <hash>27</hash>
                        <minOccurs>0</minOccurs>
                        <localName>publicationDate</localName>
                        <DateTimeType className="webtool.soap.DateTimeType" version="2.2.3">
-                        <hash>27</hash>
+                        <hash>28</hash>
                        </DateTimeType>
                       </ElementType>
                       <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                       <hash>28</hash>
+                       <hash>29</hash>
                        <minOccurs>0</minOccurs>
                        <localName>publisher</localName>
                        <StringType className="webtool.soap.StringType" version="2">
-                        <hash>18</hash>
+                        <hash>24</hash>
                        </StringType>
                       </ElementType>
                      </SequenceCompositor>
                     </ComplexType>
                    </ElementType>
                    <ElementType className="webtool.soap.ElementType" version="2.12.3">
-                    <hash>29</hash>
+                    <hash>30</hash>
                     <localName>quantity</localName>
-                    <IntegerType className="webtool.soap.IntegerType" version="2">
-                     <hash>16</hash>
+                    <IntegerType className="webtool.soap.IntegerType" version="2.2.3">
+                     <hash>31</hash>
                     </IntegerType>
                    </ElementType>
                   </SequenceCompositor>
@@ -7836,7 +7507,7 @@
      <TestDependencyLogic className="webtool.test.logic.TestDependencyLogic" version="1.2">
      </TestDependencyLogic>
     </TestLogic>
-    <testID>55</testID>
+    <testID>72</testID>
     <enabled>true</enabled>
     <name>submitOrder</name>
     <performanceGroup>5</performanceGroup>
@@ -9545,5 +9216,322 @@
     </SOAPRPCTool>
    </SOAPRPCToolTest>
   </TestSuite>
+  <ToolTest className="webtool.test.ToolTest" version="4.15.2">
+   <DebugAssets className="webtool.test.debug.DebugAssets" version="1">
+   </DebugAssets>
+   <ReportingSettings className="webtool.test.ReportingSettings" version="1.1">
+    <TestGRSSettings className="webtool.test.grs.TestGRSSettings" version="1.4.3">
+    </TestGRSSettings>
+   </ReportingSettings>
+   <testLogic>true</testLogic>
+   <TestLogic className="webtool.test.logic.TestLogic" version="1.7">
+    <TestExecutionDelay className="webtool.test.logic.TestExecutionDelay" version="1.2">
+    </TestExecutionDelay>
+    <TestExecutionDelay className="webtool.test.logic.TestExecutionDelay" version="1.2">
+    </TestExecutionDelay>
+    <TestDependencyLogic className="webtool.test.logic.TestDependencyLogic" version="1.2">
+    </TestDependencyLogic>
+   </TestLogic>
+   <testID>59</testID>
+   <enabled>true</enabled>
+   <name>Load Test Runner</name>
+   <CustomTool className="webtool.extension.tool.CustomTool" version="v.2.2.14">
+    <iconName>DefaultTool</iconName>
+    <name>Load Test Runner</name>
+    <CustomToolOutputProvider className="webtool.extension.tool.CustomToolOutputProvider" version="1.1">
+     <customToolOutputProviderSize>2</customToolOutputProviderSize>
+     <outputProviderKey>report_html</outputProviderKey>
+     <NamedToolOutputProvider className="com.parasoft.tool.NamedToolOutputProvider" version="1.2.1">
+      <outputToolsSize>1</outputToolsSize>
+      <BrowserTool className="webtool.tool.BrowserTool" version="v.2.3.14">
+       <allowToolbar>false</allowToolbar>
+       <iconName>Browse</iconName>
+       <name>Browse</name>
+       <WebBrowser className="com.parasoft.help.WebBrowser" version="4.4">
+        <Argv className="com.parasoft.util.Argv" version="4">
+         <args size="2">
+          <arg index="0">C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe</arg>
+          <arg index="1">%1</arg>
+         </args>
+        </Argv>
+        <Argv className="com.parasoft.util.Argv" version="4">
+         <args size="2">
+          <arg index="0">C:\Program Files (x86)\Google\Chrome\Application\chrome.exe</arg>
+          <arg index="1">%1</arg>
+         </args>
+        </Argv>
+        <Argv className="com.parasoft.util.Argv" version="4">
+        </Argv>
+        <Argv className="com.parasoft.util.Argv" version="4">
+        </Argv>
+       </WebBrowser>
+      </BrowserTool>
+      <name>Parasoft Load Test Report HTML</name>
+     </NamedToolOutputProvider>
+     <outputProviderKey>report_xml</outputProviderKey>
+     <NamedToolOutputProvider className="com.parasoft.tool.NamedToolOutputProvider" version="1.2.1">
+      <name>Parasoft Load Test Report XML</name>
+     </NamedToolOutputProvider>
+    </CustomToolOutputProvider>
+    <CustomToolConfiguration className="com.parasoft.extension.tool.CustomToolConfiguration" version="2.1.6">
+     <ConfigClassName>com.parasoft.soavirt.loadtestrunner.Tool</ConfigClassName>
+     <CustomValueMap className="com.parasoft.extension.CustomValueMap" version="1.2">
+      <customValueMaps size="9">
+       <key index="0">context_scenario</key>
+       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="0" version="1.2">
+        <MultiValue className="webtool.data.MultiValue" version="1.5">
+         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
+          <value>/Test Suite: Bookstore/Scenario: Search and order a book</value>
+         </StringTestValue>
+         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
+         </ParameterizedTestValue>
+         <valuesSize>1</valuesSize>
+         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
+          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
+           <code>true</code>
+           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
+            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
+             <useText>true</useText>
+             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
+             </ScriptingTextInput>
+            </ScriptingInput>
+            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
+            </ScriptEngineIdentifier>
+           </ScriptCode>
+           <methodId>true</methodId>
+           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
+           </ScriptMethodIdentifier>
+          </UserMethod>
+         </ScriptedValue>
+        </MultiValue>
+       </MultiValueCustomValue>
+       <key index="1">context_tst</key>
+       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="1" version="1.2">
+        <MultiValue className="webtool.data.MultiValue" version="1.5">
+         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
+          <value>test.tst</value>
+         </StringTestValue>
+         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
+         </ParameterizedTestValue>
+         <valuesSize>1</valuesSize>
+         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
+          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
+           <code>true</code>
+           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
+            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
+             <useText>true</useText>
+             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
+             </ScriptingTextInput>
+            </ScriptingInput>
+            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
+            </ScriptEngineIdentifier>
+           </ScriptCode>
+           <methodId>true</methodId>
+           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
+           </ScriptMethodIdentifier>
+          </UserMethod>
+         </ScriptedValue>
+        </MultiValue>
+       </MultiValueCustomValue>
+       <key index="2">qos_execution</key>
+       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="2" version="1.2">
+        <MultiValue className="webtool.data.MultiValue" version="1.5">
+         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
+          <value>10</value>
+         </StringTestValue>
+         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
+         </ParameterizedTestValue>
+         <valuesSize>1</valuesSize>
+         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
+          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
+           <code>true</code>
+           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
+            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
+             <useText>true</useText>
+             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
+             </ScriptingTextInput>
+            </ScriptingInput>
+            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
+            </ScriptEngineIdentifier>
+           </ScriptCode>
+           <methodId>true</methodId>
+           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
+           </ScriptMethodIdentifier>
+          </UserMethod>
+         </ScriptedValue>
+        </MultiValue>
+       </MultiValueCustomValue>
+       <key index="3">qos_failures</key>
+       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="3" version="1.2">
+        <MultiValue className="webtool.data.MultiValue" version="1.5">
+         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
+         </StringTestValue>
+         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
+         </ParameterizedTestValue>
+         <valuesSize>1</valuesSize>
+         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
+          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
+           <code>true</code>
+           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
+            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
+             <useText>true</useText>
+             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
+             </ScriptingTextInput>
+            </ScriptingInput>
+            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
+            </ScriptEngineIdentifier>
+           </ScriptCode>
+           <methodId>true</methodId>
+           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
+           </ScriptMethodIdentifier>
+          </UserMethod>
+         </ScriptedValue>
+        </MultiValue>
+       </MultiValueCustomValue>
+       <key index="4">qos_hits</key>
+       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="4" version="1.2">
+        <MultiValue className="webtool.data.MultiValue" version="1.5">
+         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
+          <value>250</value>
+         </StringTestValue>
+         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
+         </ParameterizedTestValue>
+         <valuesSize>1</valuesSize>
+         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
+          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
+           <code>true</code>
+           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
+            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
+             <useText>true</useText>
+             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
+             </ScriptingTextInput>
+            </ScriptingInput>
+            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
+            </ScriptEngineIdentifier>
+           </ScriptCode>
+           <methodId>true</methodId>
+           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
+           </ScriptMethodIdentifier>
+          </UserMethod>
+         </ScriptedValue>
+        </MultiValue>
+       </MultiValueCustomValue>
+       <key index="5">qos_server</key>
+       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="5" version="1.2">
+        <MultiValue className="webtool.data.MultiValue" version="1.5">
+         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
+         </StringTestValue>
+         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
+         </ParameterizedTestValue>
+         <valuesSize>1</valuesSize>
+         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
+          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
+           <code>true</code>
+           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
+            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
+             <useText>true</useText>
+             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
+             </ScriptingTextInput>
+            </ScriptingInput>
+            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
+            </ScriptEngineIdentifier>
+           </ScriptCode>
+           <methodId>true</methodId>
+           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
+           </ScriptMethodIdentifier>
+          </UserMethod>
+         </ScriptedValue>
+        </MultiValue>
+       </MultiValueCustomValue>
+       <key index="6">qos_succes</key>
+       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="6" version="1.2">
+        <MultiValue className="webtool.data.MultiValue" version="1.5">
+         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
+         </StringTestValue>
+         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
+         </ParameterizedTestValue>
+         <valuesSize>1</valuesSize>
+         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
+          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
+           <code>true</code>
+           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
+            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
+             <useText>true</useText>
+             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
+             </ScriptingTextInput>
+            </ScriptingInput>
+            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
+            </ScriptEngineIdentifier>
+           </ScriptCode>
+           <methodId>true</methodId>
+           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
+           </ScriptMethodIdentifier>
+          </UserMethod>
+         </ScriptedValue>
+        </MultiValue>
+       </MultiValueCustomValue>
+       <key index="7">scenario_minutes</key>
+       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="7" version="1.2">
+        <MultiValue className="webtool.data.MultiValue" version="1.5">
+         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
+          <value>1</value>
+         </StringTestValue>
+         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
+         </ParameterizedTestValue>
+         <valuesSize>1</valuesSize>
+         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
+          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
+           <code>true</code>
+           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
+            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
+             <useText>true</useText>
+             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
+             </ScriptingTextInput>
+            </ScriptingInput>
+            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
+            </ScriptEngineIdentifier>
+           </ScriptCode>
+           <methodId>true</methodId>
+           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
+           </ScriptMethodIdentifier>
+          </UserMethod>
+         </ScriptedValue>
+        </MultiValue>
+       </MultiValueCustomValue>
+       <key index="8">scenario_vus</key>
+       <MultiValueCustomValue className="webtool.extension.MultiValueCustomValue" index="8" version="1.2">
+        <MultiValue className="webtool.data.MultiValue" version="1.5">
+         <StringTestValue className="webtool.data.StringTestValue" version="4.1">
+          <value>5</value>
+         </StringTestValue>
+         <ParameterizedTestValue className="webtool.data.ParameterizedTestValue" version="3.1">
+         </ParameterizedTestValue>
+         <valuesSize>1</valuesSize>
+         <ScriptedValue className="webtool.data.ScriptedValue" version="1.1">
+          <UserMethod className="com.parasoft.scripting.UserMethod" version="2.2">
+           <code>true</code>
+           <ScriptCode className="com.parasoft.scripting.jsr223.ScriptCode" version="2.1.1.1">
+            <ScriptingInput className="com.parasoft.scripting.ScriptingInput" version="6">
+             <useText>true</useText>
+             <ScriptingTextInput className="com.parasoft.scripting.ScriptingTextInput" version="1.3">
+             </ScriptingTextInput>
+            </ScriptingInput>
+            <ScriptEngineIdentifier className="com.parasoft.scripting.jsr223.ScriptEngineIdentifier" version="1.1">
+            </ScriptEngineIdentifier>
+           </ScriptCode>
+           <methodId>true</methodId>
+           <ScriptMethodIdentifier className="com.parasoft.scripting.jsr223.ScriptMethodIdentifier" version="2.1.1">
+           </ScriptMethodIdentifier>
+          </UserMethod>
+         </ScriptedValue>
+        </MultiValue>
+       </MultiValueCustomValue>
+      </customValueMaps>
+     </CustomValueMap>
+     <className>com.parasoft.soavirt.loadtestrunner.Tool</className>
+     <name>Load Test Runner</name>
+    </CustomToolConfiguration>
+   </CustomTool>
+  </ToolTest>
  </TestSuite>
 </SOAtestProject>

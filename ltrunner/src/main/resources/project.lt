@@ -428,7 +428,7 @@
    <ProfileRunnableMap className="com.parasoft.simulator.api.ProfileRunnableMap" version="4">
     <profileRunnablePathss size="1">
      <profileRunnablePath index="0">{{SCENARIO}}</profileRunnablePath>
-	 <profileRunnableIndex index="0">2</profileRunnableIndex>
+	 <profileRunnableIndex index="0">1</profileRunnableIndex>
     </profileRunnablePathss>
    </ProfileRunnableMap>
    <id>ProfileName</id>

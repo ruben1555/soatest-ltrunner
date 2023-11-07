@@ -2,7 +2,7 @@
 <extensions
 	xmlns="http://schemas.parasoft.com/extensibility-framework/extension">
 	<extension xmlns="urn:ocm/parasoft/extensibility-framework/v1/extension"
-	  type="tool" name='Load Test Runner' description='Execute current test suite / scenario as load test using Parasoft Load Test'>
+	  type="tool" name='Load Test Runner' description='Execute test suite / scenario as load test using Parasoft Load Test'>
 	  <class>com.parasoft.soavirt.loadtestrunner.Tool</class>
 	  <tool xmlns="http://schemas.parasoft.com/extensibility-framework/v1/tool" 
 	  	  useInputTab="false"
@@ -16,7 +16,7 @@
 	    </outputs>
 	  </tool>
 	  <form xmlns="urn:com/parasoft/extensibility-framework/gui">
-	    <section label="LoadTest scenario">
+	    <section label="Load Test scenario">
 	      <field id="scenario_minutes" label="Duration in minutes" type="String" />
 	      <field id="scenario_vus" label="Number of virtual users" type="String" />
 	    </section>
