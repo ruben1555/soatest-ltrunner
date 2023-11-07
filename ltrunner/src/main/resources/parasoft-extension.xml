@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extensions
+	xmlns="http://schemas.parasoft.com/extensibility-framework/extension">
+	<extension xmlns="urn:ocm/parasoft/extensibility-framework/v1/extension"
+	  type="tool" name='Load Test Runner' description='Execute current test suite / scenario as load test using Parasoft Load Test'>
+	  <class>com.parasoft.soavirt.loadtestrunner.Tool</class>
+	  <tool xmlns="http://schemas.parasoft.com/extensibility-framework/v1/tool" 
+	  	  useInputTab="false"
+	  	  category="SOA/Messaging"
+	  	  showInToolList="common"
+	  	  showInOutputList="common"
+	  	  icon="ltr.ico">
+	    <outputs>
+	      <output key="report_html" name="Parasoft Load Test Report HTML" />
+	      <output key="report_xml" name="Parasoft Load Test Report XML" />
+	    </outputs>
+	  </tool>
+	  <form xmlns="urn:com/parasoft/extensibility-framework/gui">
+	    <section label="LoadTest scenario">
+	      <field id="scenario_minutes" label="Duration in minutes" type="String" />
+	      <field id="scenario_vus" label="Number of virtual users" type="String" />
+	    </section>
+	    <section label="Context">
+	      <field id="context_tst" label="TST filename" type="String" />
+	      <field id="context_scenario" label="Test Suite / Scenario path" type="String" />
+	    </section>
+	    <section label="Quality of Service">
+	    	<field id="qos_succes" label="Succes Rate - max. loss percentage (validate the percentage of successful test runs) - default 0" type="String" />
+	    	<field id="qos_failures" label="No Failures - max. number of failures (validate the number of test failures) - default 0" type="String" />
+	    	<field id="qos_hits" label="Fast Hit Rate - min. troughput in hits per second (validate virtual user hit rate) - default 10" type="String" />
+	    	<field id="qos_execution" label="Low Execution Time - max. average execution time in ms (validate based on statistic metric) - default 750" type="String" />
+	    	<field id="qos_server" label="Low Server Time - max. average server time in ms (validate based on statistic metric) - default 500" type="String" />
+	    </section>
+	  </form>
+	</extension>
+</extensions>
